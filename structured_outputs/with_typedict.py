@@ -1,4 +1,4 @@
-from typing import TypedDict,Annotated
+from typing import TypedDict,Annotated,Optional
 from langchain_groq import ChatGroq
 import os 
 from dotenv import load_dotenv
@@ -13,6 +13,7 @@ model = ChatGroq(
 class Review(TypedDict):
     summary: Annotated[str,"A breif summary of the review"]
     sentiment:Annotated[str,"sentiment of the review either positive,negetive or nurtral"]
+    name:Annotated[Optional[str],"write the name of the reviewer if explicitly mentioned only"]
 #to guide llm if ambiguity crub it 
 
 #this schema is converted into a system prompt which leads to the seggregation of sentimet and summary without explicitly mentioning so in a json formula beacuse llm is  trained to return a json output 
@@ -24,3 +25,5 @@ result= struct_model.invoke("""the cloth was not the same colour as shown in the
 
 print(result)
 print(result['summary'])
+
+#typedict only for reperesntation for validation we use pydatic 
