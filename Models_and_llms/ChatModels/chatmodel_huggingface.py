@@ -7,7 +7,7 @@ load_dotenv()
 
 llm = HuggingFaceEndpoint(
     repo_id="Qwen/Qwen2.5-7B-Instruct",
-    task="text-generation",
+    task="text_generation",
     huggingfacehub_api_token=os.getenv("HUGGINGFACEHUB_API_TOKEN"),
 
 )

@@ -7,7 +7,7 @@ from langchain_core.output_parsers import JsonOutputParser
 
 load_dotenv()
 
-llm=HuggingFaceEndpoint(repo_id='Qwen/Qwen2.5-1.5B-Instruct',task="text_genration")
+llm=HuggingFaceEndpoint(repo_id='Qwen/Qwen2.5-1.5B-Instruct',task="text_generation")
 
 model=ChatHuggingFace(llm=llm)
 
