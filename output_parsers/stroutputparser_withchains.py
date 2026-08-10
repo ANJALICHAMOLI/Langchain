@@ -1,3 +1,6 @@
+#simplest parser .extracts rawt text content form the models response removing meta data
+
+
 from langchain_huggingface import ChatHuggingFace,HuggingFaceEndpoint
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
@@ -21,3 +24,4 @@ chain= template1 | model | parser| template2 |model |parser
 result=chain.invoke({'topic':'black hole'})
 
 print(result)
+
