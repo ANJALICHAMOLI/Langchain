@@ -10,7 +10,7 @@ prompt = PromptTemplate(
     input_variables=['topic']
 )
 
-model = ChatGroq(model=os.getenv("GROQ_MODEL"))
+model = ChatGroq(model=os.getenv("groq_model"))
 
 parser = StrOutputParser()
 
