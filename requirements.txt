@@ -9,9 +9,10 @@ openai
 # Anthropic Integration
 langchain-anthropic
 
-# Google Gemini (PaLM) Integration
+# Google Gemini (PaLM),groq  Integration
 langchain-google-genai
 google-generativeai
+langchain-groq
 
 # Hugging Face Integration
 langchain-huggingface
