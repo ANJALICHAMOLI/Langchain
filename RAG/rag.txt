@@ -18,3 +18,36 @@ benifits:-
 Core RAG Components :
 
 The four fundamental pillars of any RAG architecture: Document Loaders, Text Splitters, Vector Databases, and Retrievers.
+
+
+1- DOCUMENT LOADRER-
+document loaders are utility components designed to ingest data from diverse sources and convert them into a standardized format known as Document Objects . This process is a crucial first step in building RAG (Retrieval-Augmented Generation) applications, as it prepares raw data for subsequent tasks like chunking, embedding, and retrieval .
+
+Core Characteristics:
+
+Standardized Output: Every loader, regardless of the source (PDF, text, web, etc.), outputs a list of Document objects .
+Structure: Each document consists of two primary components: page_content (the actual data) and metadata (contextual info like source, page numbers, or timestamps).
+Commonly Used Loaders:
+
+        TextLoader
+        PyPDFLoader
+        DirectoryLoader
+        CSVLoader
+functions->
+.load(): Performs eager loading, pulling the entire dataset into memory at once. Best for smaller files .
+.lazy_load(): Provides a generator that fetches documents one at a time on demand. This is highly recommended for large-scale data to minimize memory usage and stream processing 
+
+
+2-TEXT SPLITTING-
+It is the process of breaking down large chunks of text (like pdfs html pages etc) into smaller managable pieces that llm can handle effectively 
+
+why is it imp to split texts in llms ?
+    -most lms has a limit to process the amout of input size .splitting allows us to process docuemnt that would otherwise exceed limits.
+    -embeddings- short chunks yeild accurate vector embedding
+    -semantic search (similarity score)is better and hence gives results focused info not noise
+    -seummarization - prevents hallucination ad topic drift hence leads to better summarization results
+
+    -optimized computational resoruces as smaller chunks of text can be more memory efficient and allow better parallizatio of processing tasks
+
+types:-
+    
