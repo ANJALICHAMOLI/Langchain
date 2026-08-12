@@ -2,7 +2,7 @@ What is RAG?: RAG is defined as a technique that retrieves external knowledge (e
 
 or
 
-rag is a technique that combines iformatio retrival with language generation where a model retertives documents form a knowledge base provided and then uses them as context to generate accurate and grounded responses 
+rag is a technique that combines information retrival with language generation where a model retertives documents form a knowledge base provided and then uses them as context to generate accurate and grounded responses 
 
 benifits:-
 1: Use of up to date information:Access to up to date Information Unlike standard models limited by their training data eg gpt, RAG allows the system to retrieve current, real time information to provide accurate responses.
@@ -12,3 +12,9 @@ benifits:-
 3.No document size limits: While standard LLMs have a fixed context length, RAG handles large documents by splitting them into smaller chunks, making it possible to query massive datasets that would otherwise be too large to process at once
 
 4.Increased accuracy: By providing the model with specific, grounded context from your own sources, you reduce the likelihood of the model hallucinating or providing outdated answers
+
+
+
+Core RAG Components :
+
+The four fundamental pillars of any RAG architecture: Document Loaders, Text Splitters, Vector Databases, and Retrievers.
