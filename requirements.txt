@@ -27,3 +27,5 @@ python-dotenv
 # Machine Learning Utilities
 numpy
 scikit-learn
+
+requirements.txt
