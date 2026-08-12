@@ -1,3 +1,4 @@
+#csv is document loader used to load cvs 
 from langchain_community.document_loaders import CSVLoader
 
 loader = CSVLoader(file_path='/Users/data/Desktop/lagchain models /RAG/document_loaders/iris.numbers.csv',encoding='utf-8')
