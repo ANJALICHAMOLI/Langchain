@@ -82,3 +82,20 @@ Distributed architecture for high scalability.
 Durability and persistence (backups and restores).
 ACID transaction support for data integrity.
 Advanced security, such as role-based access control and authentication.
+
+4-Retrievers
+
+a retertiver is a component that fetches documents from a data source in response to a user's query.
+They act like a search engine and all retrivers are runnables 
+
+Types of Retrievers--
+Retrievers can be categorized based on their data source or their search strategy :
+
+Source-based:
+Wikipedia Retriever: Queries the Wikipedia API to fetch relevant articles .
+Vector Store Retriever: Performs semantic search within a vector database (e.g., Chroma, FAISS).
+
+Strategy-based:
+Maximum Marginal Relevance (MMR): Reduces redundancy in search results to provide more diverse information .
+Multi-Query Retriever: Uses an LLM to generate multiple versions of a user's query to resolve ambiguity and improve retrieval accuracy.
+Contextual Compression Retriever: Compresses retrieved documents by stripping away irrelevant text, keeping only content pertinent to the specific query .
