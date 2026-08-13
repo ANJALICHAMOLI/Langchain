@@ -49,5 +49,27 @@ why is it imp to split texts in llms ?
 
     -optimized computational resoruces as smaller chunks of text can be more memory efficient and allow better parallizatio of processing tasks
 
-types:-
+types:- text structure types
+        lenght based
+        document type
+        semantic based
+
+3-VECTOR STORE 
+A vector store is a specialized system designed to store and retrieve numerical vectors
+
+ why do we need them ?:
+Vector stores are essential because traditional databases and keyword-based systems fall short when handling the complex, high-dimensional data used in modern AI and machine learning applications 
+problems-
+    generatinf emebbeding vector for alot of data 
+    storage limitation as to where to store it 
+    efficient semantic search was complex as comparing  a simple query to all the embeddings was slow costly and overall bad for user experince as well
+
+fetaures of vector stores:
+    storage          -  Ensures the vectors and associated metadata are retained weather in
+                        memory for quick lookups or on dick for durability and large scale 
+    similarity search- Helps retiver vector most similar to the query vector 
+
+    indexing         -provides a data structure or method that enables fast similarity             searches on high dimentional vector 
+    CRUD              -allows crud operations
+
     
