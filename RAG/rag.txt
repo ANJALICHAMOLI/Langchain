@@ -72,4 +72,13 @@ fetaures of vector stores:
     indexing         -provides a data structure or method that enables fast similarity             searches on high dimentional vector 
     CRUD              -allows crud operations
 
-    
+
+    VECTOR STORE VS VECTOR Database
+
+vector store- a lightweight service or library designed primarily for two tasks: storing numerical vectors and performing semantic similarity searches. It is ideal for prototyping and smaller-scale applications where advanced database features (like complex access control or ACID transactions) are not strictly required. A common example is Faiss.
+
+Vector Database : This is a full-fledged database system that includes all the functionality of a vector store, plus database like features. These features often include:
+Distributed architecture for high scalability.
+Durability and persistence (backups and restores).
+ACID transaction support for data integrity.
+Advanced security, such as role-based access control and authentication.
