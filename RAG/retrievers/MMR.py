@@ -23,7 +23,7 @@ docs = [
 ]
 
 #embedding
-embedding_model = embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-2", google_api_key=os.getenv("GOOGLE_API_KEY"))
+embedding_model = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-2", google_api_key=os.getenv("GOOGLE_API_KEY"))
 
 #create faiss vector store
 vectorstore = FAISS.from_documents(
