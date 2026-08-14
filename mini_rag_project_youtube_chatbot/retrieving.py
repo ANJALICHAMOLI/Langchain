@@ -16,9 +16,9 @@ vector_store = FAISS.load_local(
     allow_dangerous_deserialization=True
 )
 
-retriver=vector_store.as_retriever(search_type='similarity',search_kwargs={"k":4})
+retriever=vector_store.as_retriever(search_type='similarity',search_kwargs={"k":4})
 
-data=retriver.invoke("what is gradient boosting")
-for i,doc in enumerate(data,1):
-    print(f"\n--- Document {i} ---")
-    print(doc.page_content)
+# data=retriver.invoke("what is gradient boosting")
+# for i,doc in enumerate(data,1):
+#     print(f"\n--- Document {i} ---")
+#     print(doc.page_content)
