@@ -9,10 +9,10 @@ import os
 load_dotenv()
 
 #init embedding
-embedding_model = GoogleGenerativeAIEmbeddings(
-    model="models/gemini-embedding-2",
-    google_api_key=os.getenv("GOOGLE_API_KEY")
-)
+# embedding_model = GoogleGenerativeAIEmbeddings(
+#     model="models/gemini-embedding-2",
+#     google_api_key=os.getenv("GOOGLE_API_KEY")
+# )
 
 llm = ChatGoogleGenerativeAI(
     model=os.getenv("gemini_model"),
@@ -30,15 +30,15 @@ prompt = PromptTemplate(
     input_variables = ['context', 'question']
 )
 
-question= "is the topic of linear regression discussed in this video? if yes then what was discussed"
-retrieved_docs= retriever.invoke(question)
+# question= "is the topic of linear regression discussed in this video? if yes then what was discussed"
+# retrieved_docs= retriever.invoke(question)
 
-context_text = "\n\n".join(doc.page_content for doc in retrieved_docs)
+# context_text = "\n\n".join(doc.page_content for doc in retrieved_docs)
 
 # print(context_text)
 
-final_prompt = prompt.invoke({"context": context_text, "question": question})
+# final_prompt = prompt.invoke({"context": context_text, "question": question})
 
 # print(final_prompt)
-answer = llm.invoke(final_prompt)
-print(answer.content)
+# answer = llm.invoke(final_prompt)
+# print(answer.content)
