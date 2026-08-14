@@ -1,0 +1,19 @@
+What are Tools? LLMs are like a brain (reasoning/speaking) without hands or legs (execution). Tools act as an interface, essentially Python functions packaged to allow the LLM to interact with external systems, APIs, or databases
+
+The Role of Agents: An agent is an LLM that can autonomously decide when and how to use these tools to achieve a specific goal
+
+Types of Tools
+
+Built-in Tools: These are pre-built by LangChain for common tasks like web searching (DuckDuckGo), running code, or interacting with shells .
+Custom Tools: Essential when an application requires unique logic, such as private APIs or specific database interactions .
+Creating Custom Tools
+
+There are three primary methods to create tools in LangChain:
+
+@tool Decorator: The simplest method. By defining a Python function with a docstring and type hinting, you can add the @tool decorator to make it accessible to an LLM .
+
+Structured Tools: Uses Pydantic models to enforce strict input schemas, which is more robust for production-ready applications .
+
+BaseTool Class: The most flexible approach. By inheriting from the BaseTool class, you gain complete control, including the ability to create asynchronous versions of your tools .
+Toolkits
+Toolkits are collections of related tools (e.g., a group of math-related functions) bundled together for convenience and reusability across different applications .
