@@ -1,0 +1,11 @@
+ how to connect Large Language Models (LLMs) with external tools, moving beyond simple text generation to performing actionable tasks.
+
+
+Tool Binding : The process of registering custom tools with an LLM, ensuring it understands the tool's purpose and the required input format (schema).
+
+Tool Calling : How an LLM identifies when a specific task requires an external tool and generates a structured request with the necessary arguments, rather than just returning text.
+
+Tool Execution : Understanding that the LLM only suggests using a tool; the actual execution of the Python function is handled by the programmer or LangChain framework.
+
+Practical Application: The video demonstrates building a real time currency conversion tool. It shows how to use an external API to fetch conversion rates and perform calculations, highlighting the importance of managing conversation history and handling tool arguments properly.
+
