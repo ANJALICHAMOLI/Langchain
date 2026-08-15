@@ -6,7 +6,7 @@ Types of Tools
 
 Built-in Tools: These are pre-built by LangChain for common tasks like web searching (DuckDuckGo), running code, or interacting with shells .
 Custom Tools: Essential when an application requires unique logic, such as private APIs or specific database interactions .
-Creating Custom Tools
+Creating Custom Tools is the choice 
 
 There are three primary methods to create tools in LangChain:
 

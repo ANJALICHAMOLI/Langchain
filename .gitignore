@@ -44,3 +44,9 @@ htmlcov/
 
 # OS files
 Thumbs.db
+
+old_env.txt
+new_env.txt.venv311/
+
+.venv311
+.new_env.txt

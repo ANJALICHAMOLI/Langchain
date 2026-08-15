@@ -28,4 +28,3 @@ python-dotenv
 numpy
 scikit-learn
 
-requirements.txt
