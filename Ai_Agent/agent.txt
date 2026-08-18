@@ -1,0 +1,24 @@
+Definition: An AI agent is an intelligent system that takes a high level goal from a user and autonomously plans, decides, and executes a sequence of actions using external tools
+
+-Agents combine LLMs (acting as the reasoning engine) with Tools (APIs or search functions) to perform actions
+Agents are goal driven, capable of planning/breaking down tasks, aware of their available tools, maintain context (memory), and are adaptive to new information
+
+ReAct (Reasoning + Acting) pattern is one of the design pattern which allows the model to interleave internal thought processes with external tool usage menaing instead of  generating answer in one go it does so step by step through thought tracese.
+it first looks at query thinks and decides and action then repeats for the same query until it reaches the right answer and then the loop finally breaks.we can also see the thougt process and the tools used for each action hence transparent.
+it is useful for :
+-multi step problems
+tool augmneted tasks(websearchh databse lookup ) etc
+-making the agents reasoning transparent and editable 
+
+
+Agent executer-
+it orchestertaes the entier loop of thinking and action:
+it first sends the inputs and previous messages to the agent(thought trace)
+as the agent gets these it starts executing the thought process to decide what the next action will be so action now gives two things back action and action input (action is search tool and action input is the query)
+agent executer then gives the result output of the search tool back to agent
+this result become the observation and is added into the history which is updated by agent executer 
+
+
+creating an agent :-
+to create a react agent we need 2 things one is llm and then the prompt 
+this promot guides the agent to react as a react agent thsiis downloaded form langcahin hub
